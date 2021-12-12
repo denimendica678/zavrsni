@@ -1,0 +1,11 @@
+C:\Users\denim\source\repos\vjezbaZavrsniRad\vjezbaZavrsniRad\bin\Debug\vjezbaZavrsniRad.exe.config
+C:\Users\denim\source\repos\vjezbaZavrsniRad\vjezbaZavrsniRad\bin\Debug\vjezbaZavrsniRad.exe
+C:\Users\denim\source\repos\vjezbaZavrsniRad\vjezbaZavrsniRad\bin\Debug\vjezbaZavrsniRad.pdb
+C:\Users\denim\source\repos\vjezbaZavrsniRad\vjezbaZavrsniRad\obj\Debug\vjezbaZavrsniRad.csprojAssemblyReference.cache
+C:\Users\denim\source\repos\vjezbaZavrsniRad\vjezbaZavrsniRad\obj\Debug\vjezbaZavrsniRad.Properties.Resources.resources
+C:\Users\denim\source\repos\vjezbaZavrsniRad\vjezbaZavrsniRad\obj\Debug\vjezbaZavrsniRad.csproj.GenerateResource.cache
+C:\Users\denim\source\repos\vjezbaZavrsniRad\vjezbaZavrsniRad\obj\Debug\vjezbaZavrsniRad.csproj.CoreCompileInputs.cache
+C:\Users\denim\source\repos\vjezbaZavrsniRad\vjezbaZavrsniRad\obj\Debug\vjezbaZavrsniRad.exe
+C:\Users\denim\source\repos\vjezbaZavrsniRad\vjezbaZavrsniRad\obj\Debug\vjezbaZavrsniRad.pdb
+C:\Users\denim\source\repos\vjezbaZavrsniRad\vjezbaZavrsniRad\obj\Debug\vjezbaZavrsniRad.Pocetna.resources
+C:\Users\denim\source\repos\vjezbaZavrsniRad\vjezbaZavrsniRad\obj\Debug\vjezbaZavrsniRad.TrenutneNajave.resources
