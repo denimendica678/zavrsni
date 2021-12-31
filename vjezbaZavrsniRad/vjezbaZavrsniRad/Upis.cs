@@ -10,32 +10,25 @@ using System.Windows.Forms;
 
 namespace vjezbaZavrsniRad
 {
-    public partial class TrenutneNajave : Form
+    public partial class Upis : Form
     {
-        public TrenutneNajave()
+        public Upis()
         {
             InitializeComponent();
+        }
+
+        private void Upis_Load(object sender, EventArgs e)
+        {
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnBack1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Pocetna fm = new Pocetna();
+            UpisBrodova fm = new UpisBrodova();
             fm.Show();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            this.TopMost = true;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
-
-            
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

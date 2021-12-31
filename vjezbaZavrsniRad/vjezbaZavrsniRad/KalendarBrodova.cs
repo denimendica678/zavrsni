@@ -10,38 +10,41 @@ using System.Windows.Forms;
 
 namespace vjezbaZavrsniRad
 {
-    public partial class Pocetna : Form
+    public partial class KalendarBrodova : Form
     {
-        public Pocetna()
+        public KalendarBrodova()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void KalendarBrodova_Load(object sender, EventArgs e)
         {
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
         }
 
-        private void btnNajave_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TrenutneNajave fm = new TrenutneNajave();
+            Pocetna fm = new Pocetna();
             fm.Show();
         }
 
-        private void btnUpis_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            KalendarBrodova fm = new KalendarBrodova();
-            fm.Show();
+
         }
 
-        private void btnKalendar_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            UpisBrodova fm = new UpisBrodova();
+            UpisUKalendar fm = new UpisUKalendar();
             fm.Show();
         }
     }

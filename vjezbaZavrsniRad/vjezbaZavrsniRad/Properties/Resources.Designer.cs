@@ -63,6 +63,16 @@ namespace vjezbaZavrsniRad.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap log2 {
+            get {
+                object obj = ResourceManager.GetObject("log2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lucka {
             get {
                 object obj = ResourceManager.GetObject("lucka", resourceCulture);
@@ -76,6 +86,16 @@ namespace vjezbaZavrsniRad.Properties {
         internal static System.Drawing.Bitmap lukaROVINJ {
             get {
                 object obj = ResourceManager.GetObject("lukaROVINJ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap naslovna_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("naslovna-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
