@@ -10,35 +10,25 @@ using System.Windows.Forms;
 
 namespace vjezbaZavrsniRad
 {
-    public partial class Upis : Form
+    public partial class UpisAgencije : Form
     {
-        public Upis()
+        public UpisAgencije()
         {
             InitializeComponent();
         }
 
-        private void Upis_Load(object sender, EventArgs e)
+        private void UpisAgencije_Load(object sender, EventArgs e)
         {
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
         }
 
-        private void btnBack1_Click(object sender, EventArgs e)
+        private void btnNatragUA_Click(object sender, EventArgs e)
         {
             this.Hide();
-            UpisBrodova fm = new UpisBrodova();
+            Pocetna fm = new Pocetna();
             fm.Show();
-
-           
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            UpisBrodova upisBrodova = new UpisBrodova();
-            upisBrodova.Ime = textBoxImeBroda.Text;
-            upisBrodova.Vrsta = comboBoxVrstaBrodaUB.Text;
-            upisBrodova.Zastava = comboBoxZastava.Text;
         }
     }
 }

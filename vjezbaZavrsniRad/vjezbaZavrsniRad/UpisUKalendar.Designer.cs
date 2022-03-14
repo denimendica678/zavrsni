@@ -30,13 +30,13 @@ namespace vjezbaZavrsniRad
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnUnesiBrodUKalendar = new System.Windows.Forms.Button();
+            this.comboBoxVez = new System.Windows.Forms.ComboBox();
+            this.comboBoxVrstaBrodaUUK = new System.Windows.Forms.ComboBox();
+            this.comboBoxAgencija = new System.Windows.Forms.ComboBox();
+            this.comboBoxImeBroda = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerOdlazak = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDolazak = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,21 +44,21 @@ namespace vjezbaZavrsniRad
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBoxNaslov = new System.Windows.Forms.RichTextBox();
-            this.btnBack1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnNatragUUKKB = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.comboBox4);
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.btnUnesiBrodUKalendar);
+            this.groupBox2.Controls.Add(this.comboBoxVez);
+            this.groupBox2.Controls.Add(this.comboBoxVrstaBrodaUUK);
+            this.groupBox2.Controls.Add(this.comboBoxAgencija);
+            this.groupBox2.Controls.Add(this.comboBoxImeBroda);
+            this.groupBox2.Controls.Add(this.dateTimePickerOdlazak);
+            this.groupBox2.Controls.Add(this.dateTimePickerDolazak);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
@@ -67,27 +67,27 @@ namespace vjezbaZavrsniRad
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.richTextBoxNaslov);
             this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.btnBack1);
+            this.groupBox2.Controls.Add(this.btnNatragUUKKB);
             this.groupBox2.Location = new System.Drawing.Point(449, 103);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1107, 779);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
-            // button2
+            // btnUnesiBrodUKalendar
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(54, 687);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(231, 46);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "UNESI";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnUnesiBrodUKalendar.BackColor = System.Drawing.Color.Silver;
+            this.btnUnesiBrodUKalendar.Location = new System.Drawing.Point(54, 687);
+            this.btnUnesiBrodUKalendar.Name = "btnUnesiBrodUKalendar";
+            this.btnUnesiBrodUKalendar.Size = new System.Drawing.Size(231, 46);
+            this.btnUnesiBrodUKalendar.TabIndex = 24;
+            this.btnUnesiBrodUKalendar.Text = "UNESI";
+            this.btnUnesiBrodUKalendar.UseVisualStyleBackColor = false;
             // 
-            // comboBox4
+            // comboBoxVez
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.comboBoxVez.FormattingEnabled = true;
+            this.comboBoxVez.Items.AddRange(new object[] {
             "V1",
             "V2",
             "V3",
@@ -98,58 +98,58 @@ namespace vjezbaZavrsniRad
             "V8",
             "V9",
             "V10"});
-            this.comboBox4.Location = new System.Drawing.Point(204, 614);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(222, 24);
-            this.comboBox4.TabIndex = 23;
+            this.comboBoxVez.Location = new System.Drawing.Point(204, 614);
+            this.comboBoxVez.Name = "comboBoxVez";
+            this.comboBoxVez.Size = new System.Drawing.Size(222, 24);
+            this.comboBoxVez.TabIndex = 23;
             // 
-            // comboBox3
+            // comboBoxVrstaBrodaUUK
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBoxVrstaBrodaUUK.FormattingEnabled = true;
+            this.comboBoxVrstaBrodaUUK.Items.AddRange(new object[] {
             "Izletnicki",
             "Jahta",
             "Cruiser",
             "Ribarski"});
-            this.comboBox3.Location = new System.Drawing.Point(204, 564);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(222, 24);
-            this.comboBox3.TabIndex = 22;
+            this.comboBoxVrstaBrodaUUK.Location = new System.Drawing.Point(204, 564);
+            this.comboBoxVrstaBrodaUUK.Name = "comboBoxVrstaBrodaUUK";
+            this.comboBoxVrstaBrodaUUK.Size = new System.Drawing.Size(222, 24);
+            this.comboBoxVrstaBrodaUUK.TabIndex = 22;
             // 
-            // comboBox2
+            // comboBoxAgencija
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxAgencija.FormattingEnabled = true;
+            this.comboBoxAgencija.Items.AddRange(new object[] {
             "Sunny Way",
             "Simmor",
             "BWA",
             "Bez agencije"});
-            this.comboBox2.Location = new System.Drawing.Point(204, 516);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(222, 24);
-            this.comboBox2.TabIndex = 21;
+            this.comboBoxAgencija.Location = new System.Drawing.Point(204, 516);
+            this.comboBoxAgencija.Name = "comboBoxAgencija";
+            this.comboBoxAgencija.Size = new System.Drawing.Size(222, 24);
+            this.comboBoxAgencija.TabIndex = 21;
             // 
-            // comboBox1
+            // comboBoxImeBroda
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(204, 357);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(222, 24);
-            this.comboBox1.TabIndex = 20;
+            this.comboBoxImeBroda.FormattingEnabled = true;
+            this.comboBoxImeBroda.Location = new System.Drawing.Point(204, 357);
+            this.comboBoxImeBroda.Name = "comboBoxImeBroda";
+            this.comboBoxImeBroda.Size = new System.Drawing.Size(222, 24);
+            this.comboBoxImeBroda.TabIndex = 20;
             // 
-            // dateTimePicker2
+            // dateTimePickerOdlazak
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(204, 462);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(222, 22);
-            this.dateTimePicker2.TabIndex = 18;
+            this.dateTimePickerOdlazak.Location = new System.Drawing.Point(204, 462);
+            this.dateTimePickerOdlazak.Name = "dateTimePickerOdlazak";
+            this.dateTimePickerOdlazak.Size = new System.Drawing.Size(222, 22);
+            this.dateTimePickerOdlazak.TabIndex = 18;
             // 
-            // dateTimePicker1
+            // dateTimePickerDolazak
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(204, 408);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(222, 22);
-            this.dateTimePicker1.TabIndex = 17;
+            this.dateTimePickerDolazak.Location = new System.Drawing.Point(204, 408);
+            this.dateTimePickerDolazak.Name = "dateTimePickerDolazak";
+            this.dateTimePickerDolazak.Size = new System.Drawing.Size(222, 22);
+            this.dateTimePickerDolazak.TabIndex = 17;
             // 
             // label6
             // 
@@ -217,17 +217,6 @@ namespace vjezbaZavrsniRad
             this.richTextBoxNaslov.TabIndex = 7;
             this.richTextBoxNaslov.Text = "UPIS U KALENDAR";
             // 
-            // btnBack1
-            // 
-            this.btnBack1.BackColor = System.Drawing.Color.Silver;
-            this.btnBack1.Location = new System.Drawing.Point(16, 42);
-            this.btnBack1.Name = "btnBack1";
-            this.btnBack1.Size = new System.Drawing.Size(224, 246);
-            this.btnBack1.TabIndex = 0;
-            this.btnBack1.Text = "NATRAG";
-            this.btnBack1.UseVisualStyleBackColor = false;
-            this.btnBack1.Click += new System.EventHandler(this.btnBack1_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -237,6 +226,17 @@ namespace vjezbaZavrsniRad
             this.pictureBox1.Size = new System.Drawing.Size(557, 246);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnNatragUUKKB
+            // 
+            this.btnNatragUUKKB.BackColor = System.Drawing.Color.Silver;
+            this.btnNatragUUKKB.Location = new System.Drawing.Point(54, 42);
+            this.btnNatragUUKKB.Name = "btnNatragUUKKB";
+            this.btnNatragUUKKB.Size = new System.Drawing.Size(187, 89);
+            this.btnNatragUUKKB.TabIndex = 0;
+            this.btnNatragUUKKB.Text = "NATRAG";
+            this.btnNatragUUKKB.UseVisualStyleBackColor = false;
+            this.btnNatragUUKKB.Click += new System.EventHandler(this.btnBack1_Click);
             // 
             // UpisUKalendar
             // 
@@ -266,13 +266,13 @@ namespace vjezbaZavrsniRad
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBoxNaslov;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnBack1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNatragUUKKB;
+        private System.Windows.Forms.DateTimePicker dateTimePickerOdlazak;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDolazak;
+        private System.Windows.Forms.ComboBox comboBoxImeBroda;
+        private System.Windows.Forms.ComboBox comboBoxVez;
+        private System.Windows.Forms.ComboBox comboBoxVrstaBrodaUUK;
+        private System.Windows.Forms.ComboBox comboBoxAgencija;
+        private System.Windows.Forms.Button btnUnesiBrodUKalendar;
     }
 }

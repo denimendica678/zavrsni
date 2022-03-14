@@ -30,123 +30,122 @@ namespace vjezbaZavrsniRad
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.dtUpisaniBrodovi = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnUpisNovogBrodaDrugaForma = new System.Windows.Forms.Button();
+            this.btnNatragUBP = new System.Windows.Forms.Button();
             this.richTextBoxNaslov = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtUpisaniBrodovi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.richTextBox1);
+            this.groupBox2.Controls.Add(this.dtUpisaniBrodovi);
+            this.groupBox2.Controls.Add(this.btnUpisNovogBrodaDrugaForma);
+            this.groupBox2.Controls.Add(this.btnNatragUBP);
             this.groupBox2.Controls.Add(this.richTextBoxNaslov);
             this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Location = new System.Drawing.Point(444, 104);
+            this.groupBox2.Location = new System.Drawing.Point(452, 104);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1107, 779);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             // 
-            // button2
+            // dtUpisaniBrodovi
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(405, 683);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(312, 79);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "UPIS BRODA";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.dtUpisaniBrodovi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtUpisaniBrodovi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            this.dtUpisaniBrodovi.Location = new System.Drawing.Point(50, 333);
+            this.dtUpisaniBrodovi.Name = "dtUpisaniBrodovi";
+            this.dtUpisaniBrodovi.RowHeadersVisible = false;
+            this.dtUpisaniBrodovi.RowHeadersWidth = 51;
+            this.dtUpisaniBrodovi.RowTemplate.Height = 24;
+            this.dtUpisaniBrodovi.Size = new System.Drawing.Size(1004, 329);
+            this.dtUpisaniBrodovi.TabIndex = 16;
             // 
-            // label6
+            // Column1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(947, 357);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 17);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "ZASTAVA";
+            this.Column1.HeaderText = "BROD";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 125;
             // 
-            // button1
+            // Column2
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(16, 42);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 246);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "NATRAG";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Column2.HeaderText = "DUŽINA";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 125;
             // 
-            // label5
+            // Column3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(767, 357);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 17);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "VRSTA";
+            this.Column3.HeaderText = "ŠIRINA";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 125;
             // 
-            // label4
+            // Column4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(588, 357);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 17);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "GAZ";
+            this.Column4.HeaderText = "GAZ";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 125;
             // 
-            // label3
+            // Column5
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(402, 357);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 17);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "ŠIRINA";
+            this.Column5.HeaderText = "VRSTA";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
             // 
-            // label2
+            // Column6
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(219, 357);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 17);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "DUŽINA";
+            this.Column6.HeaderText = "ZASTAVA";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 125;
             // 
-            // label1
+            // btnUpisNovogBrodaDrugaForma
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 357);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 17);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "BROD";
+            this.btnUpisNovogBrodaDrugaForma.BackColor = System.Drawing.Color.Silver;
+            this.btnUpisNovogBrodaDrugaForma.Location = new System.Drawing.Point(406, 681);
+            this.btnUpisNovogBrodaDrugaForma.Name = "btnUpisNovogBrodaDrugaForma";
+            this.btnUpisNovogBrodaDrugaForma.Size = new System.Drawing.Size(312, 79);
+            this.btnUpisNovogBrodaDrugaForma.TabIndex = 15;
+            this.btnUpisNovogBrodaDrugaForma.Text = "UPIS BRODA";
+            this.btnUpisNovogBrodaDrugaForma.UseVisualStyleBackColor = false;
+            this.btnUpisNovogBrodaDrugaForma.Click += new System.EventHandler(this.button2_Click);
             // 
-            // richTextBox1
+            // btnNatragUBP
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(16, 380);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1075, 285);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = "";
+            this.btnNatragUBP.BackColor = System.Drawing.Color.Silver;
+            this.btnNatragUBP.Location = new System.Drawing.Point(50, 42);
+            this.btnNatragUBP.Name = "btnNatragUBP";
+            this.btnNatragUBP.Size = new System.Drawing.Size(187, 89);
+            this.btnNatragUBP.TabIndex = 0;
+            this.btnNatragUBP.Text = "NATRAG";
+            this.btnNatragUBP.UseVisualStyleBackColor = false;
+            this.btnNatragUBP.Click += new System.EventHandler(this.button1_Click);
             // 
             // richTextBoxNaslov
             // 
@@ -181,7 +180,7 @@ namespace vjezbaZavrsniRad
             this.Text = "Upis i pregled brodova";
             this.Load += new System.EventHandler(this.UpisBrodova_Load);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtUpisaniBrodovi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -190,16 +189,16 @@ namespace vjezbaZavrsniRad
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button btnUpisNovogBrodaDrugaForma;
+        private System.Windows.Forms.Button btnNatragUBP;
         private System.Windows.Forms.RichTextBox richTextBoxNaslov;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dtUpisaniBrodovi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }

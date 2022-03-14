@@ -29,31 +29,32 @@ namespace vjezbaZavrsniRad
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBack1 = new System.Windows.Forms.Button();
+            this.btnNatragTNP = new System.Windows.Forms.Button();
             this.richTextBoxNaslov = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.dtNajave = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNajave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnBack1
+            // btnNatragTNP
             // 
-            this.btnBack1.BackColor = System.Drawing.Color.Silver;
-            this.btnBack1.Location = new System.Drawing.Point(16, 42);
-            this.btnBack1.Name = "btnBack1";
-            this.btnBack1.Size = new System.Drawing.Size(224, 246);
-            this.btnBack1.TabIndex = 0;
-            this.btnBack1.Text = "NATRAG";
-            this.btnBack1.UseVisualStyleBackColor = false;
-            this.btnBack1.Click += new System.EventHandler(this.btnBack1_Click);
+            this.btnNatragTNP.BackColor = System.Drawing.Color.Silver;
+            this.btnNatragTNP.Location = new System.Drawing.Point(48, 42);
+            this.btnNatragTNP.Name = "btnNatragTNP";
+            this.btnNatragTNP.Size = new System.Drawing.Size(187, 89);
+            this.btnNatragTNP.TabIndex = 0;
+            this.btnNatragTNP.Text = "NATRAG";
+            this.btnNatragTNP.UseVisualStyleBackColor = false;
+            this.btnNatragTNP.Click += new System.EventHandler(this.btnBack1_Click);
             // 
             // richTextBoxNaslov
             // 
@@ -69,84 +70,81 @@ namespace vjezbaZavrsniRad
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.richTextBox1);
+            this.groupBox2.Controls.Add(this.dtNajave);
             this.groupBox2.Controls.Add(this.richTextBoxNaslov);
             this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.btnBack1);
+            this.groupBox2.Controls.Add(this.btnNatragTNP);
             this.groupBox2.Location = new System.Drawing.Point(444, 103);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1107, 779);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             // 
-            // richTextBox1
+            // dtNajave
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(16, 380);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1075, 381);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = "";
+            this.dtNajave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtNajave.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            this.dtNajave.Location = new System.Drawing.Point(48, 349);
+            this.dtNajave.Name = "dtNajave";
+            this.dtNajave.RowHeadersVisible = false;
+            this.dtNajave.RowHeadersWidth = 51;
+            this.dtNajave.RowTemplate.Height = 24;
+            this.dtNajave.Size = new System.Drawing.Size(1006, 412);
+            this.dtNajave.TabIndex = 15;
             // 
-            // label1
+            // Column1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 357);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 17);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "BROD";
+            this.Column1.HeaderText = "BROD";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 125;
             // 
-            // label2
+            // Column2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(219, 357);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "DOLAZAK";
+            this.Column2.HeaderText = "DOLAZAK";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 125;
             // 
-            // label3
+            // Column3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(421, 357);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 17);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "ODLAZAK";
+            this.Column3.HeaderText = "ODLAZAK";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 125;
             // 
-            // label4
+            // Column4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(610, 357);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 17);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "VEZ";
+            this.Column4.HeaderText = "VEZ";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 125;
             // 
-            // label5
+            // Column5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(769, 357);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 17);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "VRSTA BRODA";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.Column5.HeaderText = "VRSTA BRODA";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
             // 
-            // label6
+            // Column6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(979, 357);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 17);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "AGENCIJA";
+            this.Column6.HeaderText = "AGENCIJA";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 125;
             // 
             // pictureBox1
             // 
@@ -169,7 +167,7 @@ namespace vjezbaZavrsniRad
             this.Text = "Trenutne najave";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNajave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -177,16 +175,16 @@ namespace vjezbaZavrsniRad
 
         #endregion
 
-        private System.Windows.Forms.Button btnBack1;
+        private System.Windows.Forms.Button btnNatragTNP;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RichTextBox richTextBoxNaslov;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.DataGridView dtNajave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }

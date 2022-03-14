@@ -44,5 +44,17 @@ namespace vjezbaZavrsniRad
             UpisBrodova fm = new UpisBrodova();
             fm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnUpisAgencije_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UpisAgencije fm = new UpisAgencije();
+            fm.Show();
+        }
     }
 }

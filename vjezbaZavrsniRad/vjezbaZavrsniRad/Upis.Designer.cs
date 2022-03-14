@@ -30,7 +30,13 @@ namespace vjezbaZavrsniRad
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBoxDuzina = new System.Windows.Forms.TextBox();
+            this.textBoxSirina = new System.Windows.Forms.TextBox();
+            this.textBoxGaz = new System.Windows.Forms.TextBox();
+            this.textBoxImeBroda = new System.Windows.Forms.TextBox();
+            this.btnUnesiNoviBrod = new System.Windows.Forms.Button();
+            this.comboBoxZastava = new System.Windows.Forms.ComboBox();
+            this.comboBoxVrstaBrodaUB = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -38,27 +44,21 @@ namespace vjezbaZavrsniRad
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBoxNaslov = new System.Windows.Forms.RichTextBox();
-            this.btnBack1 = new System.Windows.Forms.Button();
+            this.btnNatragUBUB = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.comboBox4);
-            this.groupBox2.Controls.Add(this.comboBox3);
+            this.groupBox2.Controls.Add(this.textBoxDuzina);
+            this.groupBox2.Controls.Add(this.textBoxSirina);
+            this.groupBox2.Controls.Add(this.textBoxGaz);
+            this.groupBox2.Controls.Add(this.textBoxImeBroda);
+            this.groupBox2.Controls.Add(this.btnUnesiNoviBrod);
+            this.groupBox2.Controls.Add(this.comboBoxZastava);
+            this.groupBox2.Controls.Add(this.comboBoxVrstaBrodaUB);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
@@ -67,22 +67,85 @@ namespace vjezbaZavrsniRad
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.richTextBoxNaslov);
             this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.btnBack1);
-            this.groupBox2.Location = new System.Drawing.Point(409, 138);
+            this.groupBox2.Controls.Add(this.btnNatragUBUB);
+            this.groupBox2.Location = new System.Drawing.Point(452, 105);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1107, 779);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             // 
-            // button2
+            // textBoxDuzina
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(54, 687);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(231, 46);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "UNESI";
-            this.button2.UseVisualStyleBackColor = false;
+            this.textBoxDuzina.Location = new System.Drawing.Point(204, 462);
+            this.textBoxDuzina.Name = "textBoxDuzina";
+            this.textBoxDuzina.Size = new System.Drawing.Size(219, 22);
+            this.textBoxDuzina.TabIndex = 26;
+            // 
+            // textBoxSirina
+            // 
+            this.textBoxSirina.Location = new System.Drawing.Point(204, 516);
+            this.textBoxSirina.Name = "textBoxSirina";
+            this.textBoxSirina.Size = new System.Drawing.Size(219, 22);
+            this.textBoxSirina.TabIndex = 27;
+            // 
+            // textBoxGaz
+            // 
+            this.textBoxGaz.Location = new System.Drawing.Point(204, 567);
+            this.textBoxGaz.Name = "textBoxGaz";
+            this.textBoxGaz.Size = new System.Drawing.Size(219, 22);
+            this.textBoxGaz.TabIndex = 28;
+            // 
+            // textBoxImeBroda
+            // 
+            this.textBoxImeBroda.Location = new System.Drawing.Point(204, 357);
+            this.textBoxImeBroda.Name = "textBoxImeBroda";
+            this.textBoxImeBroda.Size = new System.Drawing.Size(219, 22);
+            this.textBoxImeBroda.TabIndex = 25;
+            // 
+            // btnUnesiNoviBrod
+            // 
+            this.btnUnesiNoviBrod.BackColor = System.Drawing.Color.Silver;
+            this.btnUnesiNoviBrod.Location = new System.Drawing.Point(54, 687);
+            this.btnUnesiNoviBrod.Name = "btnUnesiNoviBrod";
+            this.btnUnesiNoviBrod.Size = new System.Drawing.Size(231, 46);
+            this.btnUnesiNoviBrod.TabIndex = 24;
+            this.btnUnesiNoviBrod.Text = "UNESI";
+            this.btnUnesiNoviBrod.UseVisualStyleBackColor = false;
+            this.btnUnesiNoviBrod.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // comboBoxZastava
+            // 
+            this.comboBoxZastava.FormattingEnabled = true;
+            this.comboBoxZastava.Items.AddRange(new object[] {
+            "HRV",
+            "ITA",
+            "SRB",
+            "BIH",
+            "CG",
+            "ALB",
+            "GER",
+            "FRA",
+            "SPA",
+            "POR",
+            "ENG",
+            "USA"});
+            this.comboBoxZastava.Location = new System.Drawing.Point(204, 614);
+            this.comboBoxZastava.Name = "comboBoxZastava";
+            this.comboBoxZastava.Size = new System.Drawing.Size(219, 24);
+            this.comboBoxZastava.TabIndex = 23;
+            // 
+            // comboBoxVrstaBrodaUB
+            // 
+            this.comboBoxVrstaBrodaUB.FormattingEnabled = true;
+            this.comboBoxVrstaBrodaUB.Items.AddRange(new object[] {
+            "Izletnicki",
+            "Jahta",
+            "Cruiser",
+            "Ribarski"});
+            this.comboBoxVrstaBrodaUB.Location = new System.Drawing.Point(204, 408);
+            this.comboBoxVrstaBrodaUB.Name = "comboBoxVrstaBrodaUB";
+            this.comboBoxVrstaBrodaUB.Size = new System.Drawing.Size(219, 24);
+            this.comboBoxVrstaBrodaUB.TabIndex = 22;
             // 
             // label6
             // 
@@ -150,16 +213,16 @@ namespace vjezbaZavrsniRad
             this.richTextBoxNaslov.TabIndex = 7;
             this.richTextBoxNaslov.Text = "UPIS BRODA";
             // 
-            // btnBack1
+            // btnNatragUBUB
             // 
-            this.btnBack1.BackColor = System.Drawing.Color.Silver;
-            this.btnBack1.Location = new System.Drawing.Point(16, 42);
-            this.btnBack1.Name = "btnBack1";
-            this.btnBack1.Size = new System.Drawing.Size(224, 246);
-            this.btnBack1.TabIndex = 0;
-            this.btnBack1.Text = "NATRAG";
-            this.btnBack1.UseVisualStyleBackColor = false;
-            this.btnBack1.Click += new System.EventHandler(this.btnBack1_Click);
+            this.btnNatragUBUB.BackColor = System.Drawing.Color.Silver;
+            this.btnNatragUBUB.Location = new System.Drawing.Point(54, 42);
+            this.btnNatragUBUB.Name = "btnNatragUBUB";
+            this.btnNatragUBUB.Size = new System.Drawing.Size(187, 89);
+            this.btnNatragUBUB.TabIndex = 0;
+            this.btnNatragUBUB.Text = "NATRAG";
+            this.btnNatragUBUB.UseVisualStyleBackColor = false;
+            this.btnNatragUBUB.Click += new System.EventHandler(this.btnBack1_Click);
             // 
             // pictureBox1
             // 
@@ -170,68 +233,6 @@ namespace vjezbaZavrsniRad
             this.pictureBox1.Size = new System.Drawing.Size(557, 246);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "HRV",
-            "ITA",
-            "SRB",
-            "BIH",
-            "CG",
-            "ALB",
-            "GER",
-            "FRA",
-            "SPA",
-            "POR",
-            "ENG",
-            "USA"});
-            this.comboBox4.Location = new System.Drawing.Point(204, 614);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(219, 24);
-            this.comboBox4.TabIndex = 23;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Izletnicki",
-            "Jahta",
-            "Cruiser",
-            "Ribarski"});
-            this.comboBox3.Location = new System.Drawing.Point(204, 408);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(219, 24);
-            this.comboBox3.TabIndex = 22;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(204, 357);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 22);
-            this.textBox1.TabIndex = 25;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(204, 462);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 22);
-            this.textBox2.TabIndex = 26;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(204, 516);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(219, 22);
-            this.textBox3.TabIndex = 27;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(204, 567);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(219, 22);
-            this.textBox4.TabIndex = 28;
             // 
             // Upis
             // 
@@ -253,7 +254,7 @@ namespace vjezbaZavrsniRad
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUnesiNoviBrod;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -262,12 +263,12 @@ namespace vjezbaZavrsniRad
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBoxNaslov;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnBack1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Button btnNatragUBUB;
+        private System.Windows.Forms.TextBox textBoxDuzina;
+        private System.Windows.Forms.TextBox textBoxSirina;
+        private System.Windows.Forms.TextBox textBoxGaz;
+        private System.Windows.Forms.ComboBox comboBoxZastava;
+        private System.Windows.Forms.ComboBox comboBoxVrstaBrodaUB;
+        public System.Windows.Forms.TextBox textBoxImeBroda;
     }
 }
